@@ -10,5 +10,5 @@ int main(void)
     i = 1000+(rand()%9000);
  
     puts("Pin aleatório:");
-    printf("%d\n",a);
+    printf("%d\n",i);
 }
