@@ -10,5 +10,5 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: uname -a && pwd && ls && gcc -v && make
+- script: uname -a && pwd && ls && gcc -v && gcc -g3 random.c -o random
   displayName: 'make'
