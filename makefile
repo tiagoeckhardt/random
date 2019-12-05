@@ -1,2 +1,2 @@
 hellomake: random.c
- gcc -o random random.c -I .
+ gcc -o random random.c -I.
