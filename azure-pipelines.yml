@@ -1,7 +1,7 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# C/C++ with GCC
+# Build your C/C++ project with GCC using make.
+# Add steps that publish test results, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/c-cpp/gcc
 
 trigger:
 - master
@@ -9,9 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+steps:
 - script: |
-    clang -coverage -O0 random.c -o random
-    ./random
-    gcov random.c || cat random.c 
-  displayName: 'Compile C'
+    make
+  displayName: 'make'
 
