@@ -5,4 +5,4 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     steps:
-      - run: uname -a && pwd && ls && cd / && gcc -v && gcc -g3 random.c -o random && ./random
+      - run: uname -a && pwd && ls -lhtr && gcc -v && gcc -g3 random.c -o random && ./random
