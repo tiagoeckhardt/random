@@ -18,3 +18,6 @@ jobs:
       - run:
           name: Point Unit Testing
           command: './random'
+      - run:
+          name: Point Unit Testing
+          command: 'gcov random.c || cat random.c'
