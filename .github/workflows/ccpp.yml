@@ -11,3 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: configure
       run: pip install gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
+      
+image: ubuntu:latest
