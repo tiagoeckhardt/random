@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: apt-get install packages
-      run:  pip install gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
+    - name: random
+      run:  apt-get install -y gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
