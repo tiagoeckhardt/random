@@ -10,5 +10,5 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: gcc -ftest-coverage -g3 random.c -o random && ./random && gcov random.c || cat random.c 
+- script: gcc -ftest-coverage -g3 random.c -o random && ./random && gcov random.c || cat random.c.gcov
   displayName: 'compile and test'
