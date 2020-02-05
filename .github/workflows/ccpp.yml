@@ -1,15 +1,16 @@
 name: C
-
 on: [push]
-
 jobs:
-  build:
-
+  gcc:
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v1
-    - name: configure
-      run: pip install gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
-      
-image: ubuntu:latest
+    - name: apt-get install packages
+      run: sudo apt-get update -qq &&
+           sudo apt-get install --no-install-recommends -y
+           sudo apt-get -yq install python-minimal python2.7 python2.7-dev python3.6 python3.6-dev python3.7 python3.7-dev python-pip
+               gcc
+               git
+               libyaml-dev
+               make
+               pip install gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
