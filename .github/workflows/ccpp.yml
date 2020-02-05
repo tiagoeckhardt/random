@@ -6,7 +6,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: apt-get install packages
-      run:  gcc -v
-            libyaml-dev
-            make
-            pip install gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
+      run:  pip install gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
