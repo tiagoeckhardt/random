@@ -6,4 +6,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: random
-      run:  apt-get install -y gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
+      run:  sudo apt-get install -y gcovr && gcc -g3 random.c -o random && ./random && gcov random.c || cat random.c
