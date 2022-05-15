@@ -13,3 +13,5 @@ jobs:
       run:  sudo apt-get install -y expect && gcc -ftest-coverage -g3 comparar.c -o comparar && chmod +x comparar.sh && ./comparar.sh && gcov comparar.c
     - name: matematica
       run:  gcc -ftest-coverage -g3 matematica.c -o matematica && chmod +x matematica.sh && ./matematica.sh && gcov matematica.c
+    - name: inferencia
+      run:  gcc -ftest-coverage -g3 inferencia.c -o inferencia && ./inferencia && gcov inferencia.c
