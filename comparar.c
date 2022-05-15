@@ -10,7 +10,7 @@
 int principal()
 {
     int primeiro,segundo;
-    imprima(insere o primeiro valor:");
+    imprima("insere o primeiro valor:");
     leia("%d",&primeiro);
     imprima("Insere o segundo valor:");
     leia("%d",&segundo);
