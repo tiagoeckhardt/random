@@ -9,3 +9,5 @@ jobs:
       run:  sudo apt-get install -y gcovr && gcc -ftest-coverage -g3 random.c -o random && ./random && gcov random.c
     - name: ciclo
       run:  gcc -ftest-coverage -g3 ciclo.c -o ciclo && ./ciclo && gcov ciclo.c
+    - name: comparar
+      run:  gcc -ftest-coverage -g3 comparar.c -o comparar && ./comparar && gcov comparar.c
