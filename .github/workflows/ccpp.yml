@@ -15,3 +15,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 matematica.c -o matematica && chmod +x matematica.sh && ./matematica.sh && gcov matematica.c
     - name: inferencia
       run:  cat inferencia.c && gcc -ftest-coverage -g3 inferencia.c -o inferencia && ./inferencia && gcov inferencia.c
+    - name: verificar
+      run:  cat verificar.c && gcc -ftest-coverage -g3 verificar.c -o verificar && ./verificar && gcov verificar.c
