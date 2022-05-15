@@ -11,3 +11,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 ciclo.c -o ciclo && ./ciclo && gcov ciclo.c
     - name: comparar
       run:  sudo apt-get install -y expect && gcc -ftest-coverage -g3 comparar.c -o comparar && chmod +x comparar.sh && ./comparar.sh && gcov comparar.c
+    - name: matematica
+      run:  gcc -ftest-coverage -g3 matematica.c -o matematica && chmod +x matematica.sh && ./matematica.sh && gcov matematica.c
