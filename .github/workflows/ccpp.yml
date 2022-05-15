@@ -7,3 +7,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: random
       run:  sudo apt-get install -y gcovr && gcc -ftest-coverage -g3 random.c -o random && ./random && gcov random.c
+    - name: ciclo
+      run:  gcc -ftest-coverage -g3 ciclo.c -o ciclo && ./ciclo && gcov ciclo.c
