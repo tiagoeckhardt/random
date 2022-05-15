@@ -10,7 +10,8 @@ int main(){
                 return 1;    
                 }        
     else        
-        printf("Aplicação a ser ligada!\n");                        fopen(filename, "w");        
+        printf("Aplicação a ser ligada!\n");                        
+        fopen(filename, "w");        
         sleep (20);            
         remove(filename);        
         return 0;
