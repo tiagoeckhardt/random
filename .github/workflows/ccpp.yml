@@ -16,4 +16,6 @@ jobs:
     - name: inferencia
       run:  cat inferencia.c && gcc -ftest-coverage -g3 inferencia.c -o inferencia && ./inferencia && gcov inferencia.c
     - name: verificar
-      run:  cat verificar.c && gcc -ftest-coverage -g3 verificar.c -o verificar && ./verificar && gcov verificar.c
+      run:  gcc -ftest-coverage -g3 verificar.c -o verificar && ./verificar && gcov verificar.c
+    - name: petalas
+      run:  gcc -ftest-coverage -g3 petalas.c -o petalas && chmod +x petalas.sh && ./petalas.sh && gcov petalas.c
