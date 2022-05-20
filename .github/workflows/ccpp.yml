@@ -29,3 +29,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 enquanto.c -o enquanto && ./enquanto && gcov enquanto.c
     - name: comportarei
       run:  gcc -ftest-coverage -g3 comportarei.c -o comportarei && ./comportarei && gcov comportarei.c
+    - name: para
+      run:  gcc -ftest-coverage -g3 para.c -o para && ./para && gcov para.c
