@@ -30,4 +30,4 @@ jobs:
     - name: comportarei
       run:  gcc -ftest-coverage -g3 comportarei.c -o comportarei && ./comportarei && gcov comportarei.c
     - name: para
-      run:  gcc -ftest-coverage -g3 para.c -o para && ./para && gcov para.c
+      run:  sudo apt-get install -y libc6-dev && gcc -ftest-coverage -g3 para.c -o para && ./para && gcov para.c
