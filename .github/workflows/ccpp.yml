@@ -21,3 +21,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 petalas.c -o petalas && chmod +x petalas.sh && ./petalas.sh && gcov petalas.c
     - name: espera
       run:  gcc -ftest-coverage -g3 espera.c -o espera && chmod +x espera.sh && ./espera.sh && gcov espera.c
+    - name: decisao
+      run:  gcc -ftest-coverage -g3 decisao.c -o decisao && chmod +x decisao.sh && ./decisao.sh && gcov decisao.c
