@@ -1,4 +1,3 @@
-\\ Programa exemplo
 #include <stdio.h>
 
 int main()
