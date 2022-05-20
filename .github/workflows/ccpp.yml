@@ -23,3 +23,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 espera.c -o espera && chmod +x espera.sh && ./espera.sh && gcov espera.c
     - name: decisao
       run:  gcc -ftest-coverage -g3 decisao.c -o decisao && chmod +x decisao.sh && ./decisao.sh && gcov decisao.c
+    - name: floresta
+      run:  gcc -ftest-coverage -g3 floresta.c -o floresta && chmod +x floresta.sh && ./floresta.sh && gcov floresta.c
