@@ -25,3 +25,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 decisao.c -o decisao && chmod +x decisao.sh && ./decisao.sh && gcov decisao.c
     - name: floresta
       run:  gcc -ftest-coverage -g3 floresta.c -o floresta && chmod +x floresta.sh && ./floresta.sh && gcov floresta.c
+    - name: enquanto
+      run:  gcc -ftest-coverage -g3 enquanto.c -o enquanto && ./enquanto && gcov enquanto.c
