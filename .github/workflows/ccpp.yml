@@ -29,3 +29,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 enquanto.c -o enquanto && ./enquanto && gcov enquanto.c
     - name: para
       run:  gcc -ftest-coverage -g3 para.c -o para && ./para && gcov para.c
+    - name: nota
+      run:  gcc -ftest-coverage -g3 nota.c -o nota && chmod +x nota.sh && ./nota.sh && gcov nota.c
