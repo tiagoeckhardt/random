@@ -27,7 +27,5 @@ jobs:
       run:  gcc -ftest-coverage -g3 floresta.c -o floresta && chmod +x floresta.sh && ./floresta.sh && gcov floresta.c
     - name: enquanto
       run:  gcc -ftest-coverage -g3 enquanto.c -o enquanto && ./enquanto && gcov enquanto.c
-    - name: comportarei
-      run:  sudo apt-get install -y build-essential && gcc -ftest-coverage -g3 comportarei.c -o comportarei && ./comportarei && gcov comportarei.c
     - name: para
       run:  gcc -ftest-coverage -g3 para.c -o para && ./para && gcov para.c
