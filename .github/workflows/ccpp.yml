@@ -39,5 +39,5 @@ jobs:
       run:  sudo apt-get install git && git clone https://github.com/zoelabbb/conio.h.git && gcc -ftest-coverage -g3 vetor.c -o vetor && chmod +x vetor.sh && ./vetor.sh && gcov vetor.c
     - name: estafeta
       run:  gcc -ftest-coverage -g3 estafeta.c -o estafeta && ./estafeta 5 9 && gcov programar.c 
-   - name: programar
+    - name: programar
       run:  gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c 
