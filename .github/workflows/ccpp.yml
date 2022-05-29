@@ -35,8 +35,6 @@ jobs:
       run:  gcc -ftest-coverage -g3 local.c -o local && bash -x local.sh && gcov local.c
     - name: global
       run:  gcc -ftest-coverage -g3 global.c -o global && ./global && gcov global.c  
-    - name: vetor
-      run:  sudo apt-get install git && git clone https://github.com/zoelabbb/conio.h.git && gcc -ftest-coverage -g3 vetor.c -o vetor && chmod +x vetor.sh && ./vetor.sh && gcov vetor.c
     - name: estafeta
       run:  gcc -ftest-coverage -g3 estafeta.c -o estafeta && ./estafeta 5 9 && gcov programar.c 
     - name: programar
