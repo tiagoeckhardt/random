@@ -7,7 +7,7 @@ int main () {
 /* variável local */
 int g = 10;
  
-printf (“valor de g = %d\n",  g);
+printf ("valor de g = %d\n",  g);
  
 return 0;
 }
