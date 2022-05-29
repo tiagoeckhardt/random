@@ -36,6 +36,6 @@ jobs:
     - name: global
       run:  gcc -ftest-coverage -g3 global.c -o global && ./global && gcov global.c  
     - name: vetor
-      run:  gcc -ftest-coverage -g3 vetor.c -o vetor && chmod +x vetor.sh && ./vetor.sh && gcov programar.c
+      run:  sudo apt-get install -y libncurses5-dev libncursesw5-dev && gcc -ftest-coverage -g3 vetor.c -o vetor && chmod +x vetor.sh && ./vetor.sh && gcov programar.c
     - name: programar
-      run:  sudo apt-get install -y libncurses5-dev libncursesw5-dev && gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c 
+      run:  gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c 
