@@ -31,6 +31,8 @@ jobs:
       run:  gcc -ftest-coverage -g3 para.c -o para && ./para && gcov para.c
     - name: nota
       run:  gcc -ftest-coverage -g3 nota.c -o nota && chmod +x nota.sh && ./nota.sh && gcov nota.c
+    - name: global
+      run:  gcc -ftest-coverage -g3 global.c -o global && ./global && gcov global.c  
     - name: programar
       run:  gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c
 
