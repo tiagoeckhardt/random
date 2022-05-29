@@ -32,7 +32,7 @@ jobs:
     - name: nota
       run:  gcc -ftest-coverage -g3 nota.c -o nota && chmod +x nota.sh && ./nota.sh && gcov nota.c
     - name: local
-      run:  gcc -ftest-coverage -g3 local.c -o local && ./local; gcov local.c
+      run:  gcc -ftest-coverage -g3 local.c -o local && bash -x local.sh && gcov local.c
     - name: global
       run:  gcc -ftest-coverage -g3 global.c -o global && ./global && gcov global.c  
     - name: programar
