@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include "conio.h/conio.h"
 int main(void)
 {
 int vetor[5];
