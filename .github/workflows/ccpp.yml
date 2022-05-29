@@ -38,4 +38,4 @@ jobs:
     - name: vetor
       run:  gcc -ftest-coverage -g3 vetor.c -o vetor && chmod +x vetor.sh && ./vetor.sh && gcov programar.c
     - name: programar
-      run:  gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c
+      run:  sudo apt-get install libncurses5-dev libncursesw5-dev && gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c 
