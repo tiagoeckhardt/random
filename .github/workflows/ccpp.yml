@@ -45,4 +45,6 @@ jobs:
       run:  bash -x restante.sh 7
     - name: digitos
       run:  bash -x digitos.sh
+    - name: baralhar
+      run:  bash -x baralhar.sh
     
