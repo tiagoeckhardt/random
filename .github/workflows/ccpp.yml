@@ -38,4 +38,7 @@ jobs:
     - name: estafeta
       run:  gcc -ftest-coverage -g3 estafeta.c -o estafeta && ./estafeta 5 9 && gcov estafeta.c 
     - name: programar
-      run:  gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c 
+      run:  gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c
+    - name: fibonacci
+      run:  bash -x fibonacci.sh
+    
