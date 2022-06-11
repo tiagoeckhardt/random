@@ -43,4 +43,6 @@ jobs:
       run:  bash -x fibonacci.sh
     - name: restante
       run:  bash -x restante.sh 7
+    - name: digitos
+      run:  bash -x digitos.sh
     
