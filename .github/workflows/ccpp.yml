@@ -46,5 +46,5 @@ jobs:
     - name: digitos
       run:  bash -x digitos.sh
     - name: baralhar
-      run:  bash -x baralhar.sh ATGC
+      run:  bash -x baralhar.sh ATGC && grep -b -o -E 'AT' nucleotideos.txt | wc -l
     
