@@ -41,4 +41,6 @@ jobs:
       run:  gcc -ftest-coverage -g3 programar.c -o programar && ./programar && gcov programar.c
     - name: fibonacci
       run:  bash -x fibonacci.sh
+    - name: restante
+      run:  bash -x restante.sh 7
     
