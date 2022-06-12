@@ -49,4 +49,5 @@ jobs:
       run:  bash -x digitos.sh
     - name: baralhar
       run:  bash -x baralhar.sh ATGC && grep -b -o -E 'AT' nucleotideos.txt | wc -l
-    
+    - name: imagemagick
+      run:  sudo apt install -y imagemagick
