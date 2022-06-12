@@ -52,4 +52,4 @@ jobs:
     - name: imagemagick
       run:  sudo apt install -y imagemagick && bash -x imagem.sh 1.jpg 2.jpg
     - name: Verficação de mecla da imagem
-      run:  base64 mecla*.jpg
+      run:  base64 mescla*.jpg
