@@ -49,7 +49,9 @@ jobs:
       run:  bash -x digitos.sh
     - name: baralhar
       run:  bash -x baralhar.sh ATGC && grep -b -o -E 'AT' nucleotideos.txt | wc -l
-    - name: imagemagick
+    - name: Instalação imagemagick e mesclagem de imagens
       run:  sudo apt install -y imagemagick && bash -x imagem.sh 1.jpg 2.jpg
     - name: Verficação de mecla da imagem
       run:  base64 mescla*.jpg
+    - name: Instalação sox
+      run:  sudo apt install -y sox 
