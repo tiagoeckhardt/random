@@ -63,3 +63,8 @@ jobs:
       run:  sox saida.wav -n noiseprof perfil.prof    
     - name: Limpar o som de ruído
       run:  sox som.wav somlimpo.wav noisered perfil.prof 0.21  
+    - name: Gerar nova saída de espectrograma 
+      run:  bash -x espectrograma.sh somlimpo.wav somlimpo2.wav
+    - name: Verficação de aprendizagem 
+      run:  base64 aprender*.png
+      
