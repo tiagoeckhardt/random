@@ -70,4 +70,4 @@ jobs:
     - name: Divisão de imagem por canal
       run:  convert -crop 100%x50% aprender*.png saida.png
     - name: Comparação de imagens
-      run:  bash -x compararimagens.sh saida-1.png saida-2.png
+      run:  bash -x compararimagens.sh saida-1.png saida-2.png && cat output.out
