@@ -54,4 +54,12 @@ jobs:
     - name: Verficação de mecla da imagem
       run:  base64 mescla*.jpg
     - name: Instalação sox
-      run:  sudo apt install -y sox 
+      run:  sudo apt install -y sox
+    - name: O silêncio é retirado do som
+      run:  sox exemplo.wav som.wav silence 1 0.2 1% 1 0.2 1% 
+    - name: Comando Bash para retificar o som do ruído de fundo
+      run:  sox entrada.wav saida.wav trim 0 0.900
+    - name: Gerar um perfil para retificar o som
+      run:  sox saida.wav -n noiseprof perfil.prof    
+    - name: Limpar o som de ruído
+      run:  sox som.wav somlimpo.wav noisered perfil.prof 0.21  
