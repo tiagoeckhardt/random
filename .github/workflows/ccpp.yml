@@ -50,4 +50,4 @@ jobs:
     - name: baralhar
       run:  bash -x baralhar.sh ATGC && grep -b -o -E 'AT' nucleotideos.txt | wc -l
     - name: imagemagick
-      run:  sudo apt install -y imagemagick && bash -x image.sh 1.jpg 2.jpg
+      run:  sudo apt install -y imagemagick && bash -x imagem.sh 1.jpg 2.jpg
