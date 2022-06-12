@@ -67,4 +67,7 @@ jobs:
       run:  bash -x espectrograma.sh somlimpo.wav somlimpo2.wav
     - name: Verficação de aprendizagem 
       run:  base64 aprender*.png
-      
+    - name: Divisão de imagem por canal
+      run:  convert -crop 100%x50% aprender*.png saida.png
+    - name: Comparação de imagens
+      run:  bash -x compararimagem.sh saida-1.png saida-2.png
