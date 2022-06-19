@@ -71,3 +71,5 @@ jobs:
       run:  convert -crop 100%x50% aprender*.png saida.png
     - name: Comparação de imagens
       run:  bash -x compararimagens.sh saida-0.png saida-1.png && cat output.out
+    - name: troca
+      run:  gcc -ftest-coverage -g3 troca.c -o troca && ./troca && gcov local.c
